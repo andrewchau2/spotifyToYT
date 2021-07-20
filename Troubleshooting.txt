@@ -1,0 +1,37 @@
+Error in running the program?
+Songs are only valid in UTF-8 Encoding. If program crashes halfway through reading a song(you can see progress in
+"songs.txt"), it means that the song it is trying to read is invalid for that encoding. You must delete it.
+
+If that still doesn't fix the crash, try to run the program again later. Youtube might be experiencing some
+lag which will cause failed requests.
+--------------------------------------------------------------
+
+Program was running but suddenly crashes saying that quota exceeded?
+
+YT has a certain quota limit to limit the amount of actions a day. However, you can bypass this by changing the
+testing.json to yt_secret.json or vise versa in the insertSong.py and searchVid.py
+
+This allows the quota to be redirected to a different project and thus resetting the limit. However, if you exceed both
+of these project's quotas, then wait till the next day when it resets
+
+------------------------------------------------------------------
+Error in path/wanting to redirect the file path?
+
+File paths are designed to create/update at the current directory, and it is recommended to leave the path as it is.
+If you really need to redirect where the file saves at, you need to replace readFileName and writeFileName in BOTH
+insertSong.py and searchVid.py with the PRECISE PATH. This may also result in changing the File I/O code
+
+-------------------------------------------------------------------
+Want to change the writing/reading to file name?
+
+It's best to leave this as default, but if you want to:
+In insertSong.py,getSongs.py, and searchVid.py, you can replace songs.txt && songsConvert.txt to a different name.
+
+----------------------------------------------------------------------
+
+If python libraries does not auto import google libraries, do the following:
+
+File -> Settings -> Search: Interp -> Find packages and install:
+google-api-python-client
+google-auth-oauthlib 
+google-auth-httplib2
