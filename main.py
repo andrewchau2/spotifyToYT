@@ -16,9 +16,9 @@ if __name__ == '__main__':
     print("yt:", ytPlaylistKey)
     print("\n\n\n\n\n\n\n\n\n\n\n\nProgram Finished!")
 
-#getSongs.getSpotifySongs(spotPlaylistID=spotifyURIKey)
-#searchVid.searchYTSongs()
-#insertSong.insertYTSongs(ytPlaylistID=ytPlaylistKey)
+getSongs.getSpotifySongs(spotPlaylistID=spotifyURIKey)
+searchVid.searchYTSongs()
+insertSong.insertYTSongs(ytPlaylistID=ytPlaylistKey)
 
 
 
