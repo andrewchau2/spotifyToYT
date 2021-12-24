@@ -43,7 +43,7 @@ def searchYTSongs():
 
     while line:
         try:
-            line += 'nightcore'
+            
             print("Searching up",line)
             request = youtube.search().list(
                 part="snippet",
